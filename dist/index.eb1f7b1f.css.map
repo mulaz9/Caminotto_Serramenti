@@ -1,0 +1,1 @@
+{"mappings":"","sources":["index.eb1f7b1f.css","scss/variables.scss"],"sourcesContent":["\n\n/*# sourceMappingURL=index.eb1f7b1f.css.map */\n","$light-color: #ffff;\r\n$medium-color: #717171;\r\n$dark-color: #231f20;\r\n$primary-color: #be1624;\r\n$hover-color: rgba(0, 0, 0, 0.7);\r\n$body-color: #f1f1f1;\r\n"],"names":[],"version":3,"file":"index.eb1f7b1f.css.map"}
