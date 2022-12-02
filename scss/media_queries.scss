@@ -1,0 +1,90 @@
+@media (max-width: 414px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .splide__track {
+    height: 70vh;
+    h1 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  #cards-bar {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: fit-content;
+    padding: 0;
+  }
+
+  #home-realizzazioni {
+    .presentazione {
+      display: block;
+      img {
+        display: none;
+      }
+    }
+    .alcune__realizzazioni,
+    .btn__tutte-le-realizzazioni {
+      display: none;
+    }
+  }
+
+  #home-certificazioni {
+    padding: 5vh 5vw;
+    padding-bottom: 10vh;
+    .certificazioni__content {
+      display: flex;
+      flex-direction: column-reverse;
+      .certificazioni__loghi {
+        padding-left: 5vw;
+        padding-bottom: 5vh;
+        flex-direction: row;
+        align-items: center;
+        img {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  #richiesta-preventivo {
+    padding: 5vh 5vw;
+    p {
+      padding: 5vh 0;
+    }
+    .form,
+    form {
+      display: flex;
+      flex-direction: column;
+      .form__item {
+        margin: 0;
+        width: 95%;
+      }
+    }
+  }
+
+  #map {
+    .googleMapsIframeContainer {
+      .googleMapsIframe {
+        height: 50vh;
+      }
+    }
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+    .footer__link--utili {
+      display: none;
+    }
+    .footer__social {
+      flex-direction: row;
+      scale: 0.8;
+      transform-origin: left center;
+      .social__icon {
+        padding-right: 10px;
+      }
+    }
+  }
+}

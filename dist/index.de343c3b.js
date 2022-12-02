@@ -9,16 +9,37 @@ const navbarMarkup = function() {
     <img src="https://res.cloudinary.com/mulaz/image/upload/v1669155224/logo_light_htlfqo.jpg" alt="logo" />
     </a>
   </div>
-  <ul class="navbar__ul">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#">Chi<span>_</span>Siamo</a></li>
-    <li><a href="#">Certificazioni</a></li>
-    <li><a href="#">Prodotti</a></li>
-    <li><a href="#">Realizzazioni</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Contatti</a></li>
-  </ul>
+  <div class="navbar__ul--container hidden">
+    <ul class="navbar__ul">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chi_siamo.html">Chi<span>_</span>Siamo</a></li>
+      <li><a href="certificazioni.html">Certificazioni</a></li>
+      <li><a href="prodotti.html">Prodotti</a></li>
+      <li><a href="realizzazioni.html">Realizzazioni</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </div>
+  <div class="menu-wrap">
+    <div class="hamburger">
+      <div class="line line--1"></div>
+      <div class="line line--2"></div>
+    </div>
+  </div>
 </nav>
+<div class="menu">
+    <div>
+      <ul class="menu--ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chi_siamo.html">Chi Siamo</a></li>
+        <li><a href="certificazioni.html">Certificazioni</a></li>
+        <li><a href="prodotti.html">Prodotti</a></li>
+        <li><a href="realizzazioni.html">Realizzazioni</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+</div>
     `;
 };
 const navMarkup = navbarMarkup();
@@ -100,5 +121,36 @@ const footerMarkup = function() {
 };
 const footMarkup = footerMarkup();
 footer.insertAdjacentHTML("afterbegin", footMarkup);
+/////////////////////////////////////////////////////////////////////////////
+///////////////////////////// Show Menu ////////////////////////////////////
+// Show menu
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+const menuLine1 = document.querySelector(".line--1");
+const menuLine2 = document.querySelector(".line--2");
+let menuIsOpened = false;
+const showMenu = function() {
+    hamburger.addEventListener("click", function() {
+        if (!menuIsOpened) {
+            menuLine1.style.transform = "rotate(135deg)";
+            menuLine1.style.top = "40px";
+            menuLine2.style.transform = "rotate(-135deg)";
+            menuLine2.style.top = "40px";
+            menuLine2.style.width = "40px";
+            menu.style.transform = "translateX(0)";
+            menuIsOpened = true;
+            console.log("menuIsOpened");
+        } else {
+            menuLine1.style.transform = "rotate(0deg)";
+            menuLine1.style.top = "32px";
+            menuLine2.style.transform = "rotate(0deg)";
+            menuLine2.style.top = "42px";
+            menuLine2.style.width = "28px";
+            menu.style.transform = "translateX(150%)";
+            menuIsOpened = false;
+        }
+    });
+};
+showMenu();
 
-//# sourceMappingURL=index.8bb2c238.js.map
+//# sourceMappingURL=index.de343c3b.js.map

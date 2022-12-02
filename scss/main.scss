@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./menu.scss";
 
 // Navbar
 .navbar {
@@ -27,30 +28,34 @@
     display: flex;
     justify-content: end;
     li {
-      display: inline-block;
       padding: 0 2vw;
       line-height: 2rem;
       span {
         color: transparent;
         font-size: 0.7rem;
       }
-      &:hover {
-        cursor: pointer;
-        color: $primary-color;
-        transform: scale(1.1);
-        transition: all 0.5s;
-        &::after {
-          width: 100%;
-          background: $primary-color;
+      a {
+        display: inline-block;
+        align-items: unset;
+
+        &:hover {
+          color: $primary-color;
+          transform: scale(1.1);
+          transform-origin: center top;
+          transition: all 0.5s;
+          &::after {
+            width: 100%;
+            background: $primary-color;
+          }
         }
-      }
-      &:after {
-        content: "";
-        display: block;
-        height: 2px;
-        width: 0;
-        background: transparent;
-        transition: width 0.5s ease, background-color 0.5s ease;
+        &:after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 0;
+          background: transparent;
+          transition: width 0.5s ease, background-color 0.5s ease;
+        }
       }
     }
   }
@@ -350,3 +355,5 @@
     font-size: 0.7rem;
   }
 }
+
+@import "./media_queries.scss";
