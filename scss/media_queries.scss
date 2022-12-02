@@ -53,10 +53,11 @@
     p {
       padding: 5vh 0;
     }
-    .form,
-    form {
+    .form {
       display: flex;
       flex-direction: column;
+      width: 90%;
+      margin: auto;
       .form__item {
         margin: 0;
         width: 95%;
