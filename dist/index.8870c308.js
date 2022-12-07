@@ -7,7 +7,7 @@ const splide = new Splide(".splide", {
     autoplay: true,
     speed: 1500,
     pauseOnHover: false,
-    updateOnMove: true,
+    // updateOnMove: true,
     keyboard: "global"
 });
 const splideTrack = document.querySelector(".splide__track");
