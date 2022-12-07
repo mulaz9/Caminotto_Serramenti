@@ -298,6 +298,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     .recaptcha {
+      position: relative;
       display: flex;
       width: fit-content;
       margin: auto;
