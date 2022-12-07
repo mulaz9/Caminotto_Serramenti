@@ -106,7 +106,7 @@
       <form
         method="POST"
         data-netlify="true"
-        data-netlify-recaptcha="false"
+        data-netlify-recaptcha="true"
         name="richiesta-preventivo"
         action="/pages/success"
         class="form"
@@ -130,6 +130,9 @@
         <div class="form__item">
           <label for="company">Azienda</label>
           <input type="text" id="company" name="company" />
+        </div>
+        <div>
+          <div data-netlify-recaptcha="true"></div>
         </div>
         <button type="submit" class="btn__dark">Invia richiesta</button>
       </form>
