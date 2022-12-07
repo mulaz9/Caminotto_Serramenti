@@ -321,12 +321,13 @@
   }
 
   .splide__track {
-    height: 78vh;
+    height: 80vh;
   }
 
   .splide__track h1 {
-    font-size: 4rem;
-    line-height: 4.5rem;
+    padding-top: 7vh;
+    font-size: 3.5rem;
+    line-height: 4rem;
   }
 
   #cards-bar {
@@ -883,12 +884,13 @@
   }
 
   .splide__track {
-    height: 78vh;
+    height: 80vh;
   }
 
   .splide__track h1 {
-    font-size: 4rem;
-    line-height: 4.5rem;
+    padding-top: 7vh;
+    font-size: 3.5rem;
+    line-height: 4rem;
   }
 
   #cards-bar {
