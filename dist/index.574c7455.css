@@ -330,8 +330,8 @@
     line-height: 4rem;
   }
 
-  .overlay {
-    background-color: red;
+  .splide__track .overlay {
+    width: 100vw;
   }
 
   #cards-bar {
@@ -897,8 +897,8 @@
     line-height: 4rem;
   }
 
-  .overlay {
-    background-color: red;
+  .splide__track .overlay {
+    width: 100vw;
   }
 
   #cards-bar {

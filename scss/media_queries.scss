@@ -15,11 +15,11 @@
       font-size: 3.5rem;
       line-height: 4rem;
     }
+    .overlay {
+      width: 100vw;
+    }
   }
 
-  .overlay {
-    background-color: red;
-  }
   #cards-bar {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
