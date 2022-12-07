@@ -787,7 +787,6 @@
 
 #richiesta-preventivo .form button {
   text-align: center;
-  grid-column: 1 / span 2;
   margin: 10vh auto;
 }
 
