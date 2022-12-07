@@ -297,13 +297,11 @@
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    .recaptcha {
-      position: relative;
-      display: flex;
-      width: fit-content;
-      margin: auto;
-      align-items: center;
-      justify-content: center;
+    position: relative;
+    .g-recaptcha {
+      position: absolute;
+      top: 30%;
+      left: 30%;
     }
     .item--4 {
       grid-column: 2;
