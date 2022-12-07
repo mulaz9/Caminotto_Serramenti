@@ -250,7 +250,7 @@
         venerdì dalle ore 8.00 alle 12.30 e dalle ore 14.30 alle 18.00 (si
         consiglia l'appuntamento).
       </p>
-      <form class="form" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+      <form method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/pages/success" name="richiesta-preventivo" class="form">
         <div class="form__item">
           <label for="name">Nome e Cognome (obbligatorio)</label>
           <input type="text" id="name" name="name" required="">
@@ -271,6 +271,7 @@
           <label for="company">Azienda</label>
           <input type="text" id="company" name="company">
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit" class="btn__dark">Invia richiesta</button>
       </form>
     </section>
