@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./menu.scss";
+@import "./other_pages.scss";
 
 // Navbar
 .navbar {
@@ -58,6 +59,33 @@
         }
       }
     }
+    .navbar__prodotti {
+      position: relative;
+      a {
+        &:hover {
+          transition: all 0.3s;
+        }
+      }
+      .prodotti__ul {
+        position: absolute;
+        margin-top: 15px;
+        transition: all 0.3s;
+        top: end;
+        left: 0;
+        width: 180%;
+        padding: 10% 0;
+        padding-top: 30%;
+        background-color: $transparent-white;
+        visibility: hidden;
+        opacity: 0;
+        li {
+          font-size: 0.8rem;
+          font-weight: 600;
+          line-height: 2rem;
+          margin: 5px 0;
+        }
+      }
+    }
   }
 }
 
@@ -74,9 +102,9 @@
 
 .splide__track {
   height: 89.5vh;
-  &:hover {
-    cursor: grab;
-  }
+  // &:hover {
+  //   cursor: grab;
+  // }
   h1 {
     margin: 10vh 0;
     font-family: Yantramanav, sans-serif;
@@ -123,7 +151,7 @@
 
 // Cards bar
 #cards-bar {
-  margin: 15vh 0;
+  margin: 15vh 4vw;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
@@ -201,6 +229,7 @@
     padding: 10vh 0;
     img {
       width: 100%;
+      border-radius: 5px;
     }
     .work {
       padding-top: 20vh;
@@ -259,8 +288,7 @@
 }
 
 #richiesta-preventivo {
-  text-align: center;
-  padding: 5vh 15vw;
+  padding: 5vh 10vw;
   padding-top: 0;
   p {
     padding: 10vh 0;

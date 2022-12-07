@@ -30,7 +30,7 @@ splide.on("mounted move", function () {
     splideTrack.style.cursor = "grabbing";
   });
   splideTrack.addEventListener("mouseup", function () {
-    splideTrack.style.cursor = "grab";
+    splideTrack.style.cursor = "auto";
   });
   if (rate < 0.4) {
     slide1.style.transform = "translateY(0)";

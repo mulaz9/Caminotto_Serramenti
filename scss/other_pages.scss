@@ -1,0 +1,193 @@
+// Certificazioni
+
+#certificazioni {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  h1 {
+    grid-column: 1 / span 2;
+  }
+  img {
+    width: 100%;
+  }
+
+  .certificazioni__ico {
+    padding: 0 30px;
+  }
+}
+
+/////////////////////// Prodotti //////////////////////////
+
+#serramenti-in-alluminio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  h1 {
+    grid-column: 1 / span 2;
+  }
+  .serramenti__content {
+    margin: auto;
+  }
+  img {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+#schermature-solari {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  h1 {
+    grid-column: 1 / span 2;
+  }
+  img {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+  }
+}
+
+#controtelai-isolanti {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  h1 {
+    grid-column: 1 / span 2;
+  }
+  img {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+  }
+}
+
+#opere-in-vetro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  h1 {
+    grid-column: 1 / span 2;
+  }
+  img {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+  }
+}
+//////////////////////////////////// Realizzazioni ////////////////////////////
+
+#realizzazioni {
+  padding: 10vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  align-items: center;
+  margin: auto;
+  h1,
+  .main__text {
+    grid-column: 1 / span 2;
+    text-align: justify;
+  }
+
+  .img__container {
+    &:hover {
+      .overlay {
+        scale: 1;
+      }
+      .card__text {
+        scale: 1;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .overlay {
+      border-radius: 5px;
+      opacity: 0.6;
+      scale: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    .card__text {
+      scale: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      h2,
+      h3 {
+        margin: 5px 0;
+        align-items: center;
+        color: $light-color;
+      }
+    }
+  }
+  img {
+    border-radius: 5px;
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+///////////////////////////// News /////////////////////////////
+
+#news {
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+////////////////////////////// Contatti /////////////////////////////
+#contatti {
+  text-align: center;
+  padding: 10vh;
+  ul {
+    display: inline-block;
+    padding: 10vh 0;
+    li {
+      position: relative;
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 3vh 0;
+      a {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: transparent;
+        }
+        h5 {
+          margin: 0;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@import "./media_queries.scss";

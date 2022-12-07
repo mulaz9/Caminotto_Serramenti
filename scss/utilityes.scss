@@ -47,6 +47,10 @@ h1 {
   z-index: -1;
 }
 
+.img__container {
+  position: relative;
+}
+
 .btn__dark {
   display: flex;
   align-items: center;
@@ -79,4 +83,14 @@ h1 {
   height: 80vh;
   position: relative;
   z-index: 0;
+}
+
+.content__title {
+  font-size: 2.2rem;
+  margin-bottom: 5vh;
+}
+
+.flex__reverse {
+  display: flex;
+  flex-direction: column-reverse;
 }
