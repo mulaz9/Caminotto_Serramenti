@@ -9,7 +9,7 @@
     font-size: 2rem;
   }
   .splide__track {
-    height: 80vh;
+    height: 79vh;
     h1 {
       padding-top: 7vh;
       font-size: 3.5rem;
@@ -17,6 +17,9 @@
     }
   }
 
+  .overlay {
+    background-color: red;
+  }
   #cards-bar {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
