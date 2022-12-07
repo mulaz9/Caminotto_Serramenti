@@ -116,6 +116,10 @@
   grid-column: 1 / span 2;
 }
 
+#certificazioni h3 {
+  color: #bbbaba;
+}
+
 #certificazioni img {
   width: 100%;
 }
@@ -300,6 +304,7 @@
 #contatti ul li a h5 {
   margin: 0;
   padding: 10px 0;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 414px) {
@@ -330,6 +335,10 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr;
     padding: 0;
+  }
+
+  #cards-bar:hover {
+    scale: 1;
   }
 
   #home-realizzazioni .btn__dark {
@@ -888,6 +897,10 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr;
     padding: 0;
+  }
+
+  #cards-bar:hover {
+    scale: 1;
   }
 
   #home-realizzazioni .btn__dark {

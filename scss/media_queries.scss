@@ -21,6 +21,9 @@
     grid-template-rows: repeat(5, 1fr);
     height: fit-content;
     padding: 0;
+    &:hover {
+      scale: 1;
+    }
   }
 
   #home-realizzazioni {

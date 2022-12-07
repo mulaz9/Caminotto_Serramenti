@@ -11,6 +11,9 @@
   h1 {
     grid-column: 1 / span 2;
   }
+  h3 {
+    color: $h3-color;
+  }
   img {
     width: 100%;
   }
@@ -183,6 +186,7 @@
         }
         h5 {
           margin: 0;
+          font-size: 1.8rem;
           padding: 10px 0;
         }
       }
