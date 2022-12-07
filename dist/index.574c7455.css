@@ -779,6 +779,7 @@
   text-align: left;
   grid-template-columns: 1fr 1fr;
   display: grid;
+  position: relative;
 }
 
 #richiesta-preventivo .form .item--4 {
