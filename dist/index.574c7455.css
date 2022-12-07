@@ -316,7 +316,7 @@
   }
 
   .splide__track {
-    height: 76vh;
+    height: 78vh;
   }
 
   .splide__track h1 {
@@ -415,7 +415,7 @@
 
   #certificazioni {
     flex-direction: column;
-    padding: 5vw;
+    padding: 5vh 5vw;
     display: flex;
   }
 
@@ -439,15 +439,11 @@
 
   #realizzazioni {
     flex-direction: column;
-    padding: 5vw;
+    padding: 5vh 5vw;
     display: flex;
   }
 
-  #contatti {
-    padding: 5vw;
-  }
-
-  #contatti ul {
+  #contatti, #contatti ul {
     padding: 5vh 0;
   }
 }
@@ -878,7 +874,7 @@
   }
 
   .splide__track {
-    height: 76vh;
+    height: 78vh;
   }
 
   .splide__track h1 {
@@ -977,7 +973,7 @@
 
   #certificazioni {
     flex-direction: column;
-    padding: 5vw;
+    padding: 5vh 5vw;
     display: flex;
   }
 
@@ -1001,15 +997,11 @@
 
   #realizzazioni {
     flex-direction: column;
-    padding: 5vw;
+    padding: 5vh 5vw;
     display: flex;
   }
 
-  #contatti {
-    padding: 5vw;
-  }
-
-  #contatti ul {
+  #contatti, #contatti ul {
     padding: 5vh 0;
   }
 }
