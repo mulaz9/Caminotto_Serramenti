@@ -147,15 +147,17 @@
         color: $light-color;
       }
     }
-  }
-  img {
-    border-radius: 5px;
-    position: relative;
-    z-index: -2;
-    width: 100%;
-    height: 100%;
+    img {
+      border-radius: 5px;
+      position: relative;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
+
+///////////////////////////////// Single Page works //////////////////////////////////
 
 #single-work {
   display: grid;
@@ -191,6 +193,10 @@
   }
   .splide {
     width: 80%;
+    .splide__arrow {
+      background-color: transparent;
+      color: $light-color;
+    }
     .splide__track {
       height: 100%;
       margin-top: 100px;
@@ -199,6 +205,7 @@
           img {
             width: 100%;
             height: 350px;
+            object-fit: cover;
             &:hover {
               cursor: pointer;
             }
@@ -215,7 +222,7 @@
 
     .thumbnail {
       width: 70px;
-      // height: 70px;
+      max-height: 50px;
       overflow: hidden;
       list-style: none;
       margin: 0 0.2rem;
@@ -232,10 +239,13 @@
     }
   }
   .work {
-    padding: 5vh 5vh 5vw 5vw;
+    padding: 5vh 5vw;
     .work__subtitle {
       color: $medium-color;
       margin: 0;
+    }
+    .btn__dark {
+      margin-top: 30px;
     }
   }
 }
