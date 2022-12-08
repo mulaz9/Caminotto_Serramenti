@@ -49,30 +49,30 @@
         class="splide"
         aria-label="My Awesome Gallery"
       >
-      <div class="splide__arrows">
-        <button class="splide__arrow splide__arrow--prev">
-          <iconify-icon icon="material-symbols:arrow-back-ios-new-rounded" width="32"></iconify-icon>
-        </button>
-        <button class="splide__arrow splide__arrow--next">
-          <iconify-icon icon="material-symbols:arrow-forward-ios-rounded" width="32"></iconify-icon>
-        </button>
-      </div>
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <iconify-icon
+              icon="material-symbols:arrow-back-ios-new-rounded"
+              width="32"
+            ></iconify-icon>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <iconify-icon
+              icon="material-symbols:arrow-forward-ios-rounded"
+              width="32"
+            ></iconify-icon>
+          </button>
+        </div>
         <div class="splide__track">
           <ul class="splide__list">
-              <li class="splide__slide">
-                <a class="overlay__link" href="#">
-                  <img
-                  src="./img/Foto_lavori/Hotel_bristol_light.jpg"
-                  alt=""
-                  />
-                </a>
-              </li>
             <li class="splide__slide">
               <a class="overlay__link" href="#">
-                <img
-                src="./img/Foto_lavori/Hotel_bristol_lato.jpg"
-                alt=""
-                />
+                <img src="./img/Foto_lavori/Hotel_bristol_light.jpg" alt="" />
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a class="overlay__link" href="#">
+                <img src="./img/Foto_lavori/Hotel_bristol_lato.jpg" alt="" />
               </a>
             </li>
             <li class="splide__slide">
@@ -84,10 +84,7 @@
         </div>
         <ul id="thumbnails" class="thumbnails">
           <li class="thumbnail">
-            <img
-              src="./img/Foto_lavori/Hotel_bristol_light.jpg"
-              alt=""
-            />
+            <img src="./img/Foto_lavori/Hotel_bristol_light.jpg" alt="" />
           </li>
           <li class="thumbnail">
             <img src="./img/Foto_lavori/Hotel_bristol_lato.jpg" alt="" />
@@ -103,17 +100,26 @@
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-        <h2 class="work__title">Hotel Bristol</h2>
-        <h4 class="work__subtitle">Location:</h4>
-        <p class="work__description">Caorle</p>
-        <h4 class="work__subtitle">Sistemi Utilizzati:</h4>
-        <p class="work__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi
-          quos ab dolore minima quisquam mollitia at sequi dicta, adipisci
-          cupiditate totam cum blanditiis tempore aliquam laudantium! Nihil,
-          et saepe?
-        </p>
+          <h2 class="work__title">Hotel Bristol</h2>
+          <h4 class="work__subtitle">Location:</h4>
+          <p class="work__description">Caorle</p>
+          <h4 class="work__subtitle">Sistemi Utilizzati:</h4>
+          <p class="work__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi
+            quos ab dolore minima quisquam mollitia at sequi dicta, adipisci
+            cupiditate totam cum blanditiis tempore aliquam laudantium! Nihil,
+            et saepe?
+          </p>
         </div>
+        <a
+          href="javascript:history.go(-1)"
+          onMouseOver="self.status=document.referrer;return true"
+        >
+          <button data-aos="zoom-in" data-aos-duration="1000" class="btn__dark">
+            Torna a realizzazioni
+          </button>
+        </a>
+      </div>
     </section>
     <footer id="footer">
       <!-- <div class="footer__contatti">
