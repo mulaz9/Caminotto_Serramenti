@@ -1,0 +1,2 @@
+"use strict";const splide=new Splide(".splide",{type:"loop",perPage:1,arrows:!0,pagination:!1,autoplay:!1,keyboard:"global"});for(var current,thumbnails=document.getElementsByClassName("thumbnail"),i=0;i<thumbnails.length;i++)initThumbnail(thumbnails[i],i);function initThumbnail(i,e){i.addEventListener("click",(function(){splide.go(e)}))}splide.on("move",(function(){current&&current.classList.remove("is-active");var i=thumbnails[splide.index];i&&(i.classList.add("is-active"),current=i)})),splide.mount();
+//# sourceMappingURL=hotel_international.b5a7cda4.js.map

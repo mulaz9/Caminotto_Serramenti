@@ -1,0 +1,2 @@
+"use strict";const splide=new Splide(".splide",{type:"loop",perPage:1,arrows:!0,pagination:!1,autoplay:!1,keyboard:"global"}),thumbnails=document.getElementsByClassName("thumbnail");let current;for(let e=0;e<thumbnails.length;e++)initThumbnail(thumbnails[e],e);function initThumbnail(e,t){e.addEventListener("click",(function(){splide.go(t)}))}splide.on("mounted move",(function(){current&&current.classList.remove("is-active");var e=thumbnails[splide.index];e&&(e.classList.add("is-active"),current=e)})),splide.mount();
+//# sourceMappingURL=hotel_international.38fa0fab.js.map

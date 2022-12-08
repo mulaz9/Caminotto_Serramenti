@@ -267,6 +267,60 @@
   position: relative;
 }
 
+#hotel-international {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  display: grid;
+}
+
+#hotel-international h1 {
+  grid-column: 1 / span 2;
+}
+
+#hotel-international #main-carousel {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 50px 0;
+}
+
+#hotel-international .splide .splide__track {
+  height: 100%;
+}
+
+#hotel-international .splide .splide__track .splide__list .splide__slide img {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#hotel-international .splide .thumbnails {
+  justify-content: center;
+  margin: 1rem auto 0;
+  padding: 0;
+  display: flex;
+}
+
+#hotel-international .splide .thumbnail {
+  width: 70px;
+  cursor: pointer;
+  opacity: .5;
+  margin: 0 .2rem;
+  list-style: none;
+  overflow: hidden;
+}
+
+#hotel-international .splide .thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+#hotel-international .splide .thumbnail.is-active {
+  opacity: 1;
+}
+
+#hotel-international .work {
+  padding: 100px;
+}
+
 #news {
   height: 50vh;
   text-align: center;
@@ -455,6 +509,19 @@
     flex-direction: column;
     padding: 5vh 5vw;
     display: flex;
+  }
+
+  #hotel-international {
+    flex-direction: column;
+    display: flex;
+  }
+
+  #hotel-international #main-carousel {
+    padding: 0;
+  }
+
+  #hotel-international .work {
+    padding: 10px 20px;
   }
 
   #contatti, #contatti ul {
@@ -1022,6 +1089,19 @@
     flex-direction: column;
     padding: 5vh 5vw;
     display: flex;
+  }
+
+  #hotel-international {
+    flex-direction: column;
+    display: flex;
+  }
+
+  #hotel-international #main-carousel {
+    padding: 0;
+  }
+
+  #hotel-international .work {
+    padding: 10px 20px;
   }
 
   #contatti, #contatti ul {

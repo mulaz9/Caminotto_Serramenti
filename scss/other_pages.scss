@@ -156,6 +156,59 @@
   }
 }
 
+#hotel-international {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  h1 {
+    grid-column: 1 / span 2;
+  }
+  #main-carousel {
+    height: fit-content;
+    padding: 50px 0;
+  }
+  .splide {
+    .splide__track {
+      height: 100%;
+      .splide__list {
+        .splide__slide {
+          img {
+            width: 100%;
+            margin-top: 80px;
+          }
+        }
+      }
+    }
+    .thumbnails {
+      display: flex;
+      margin: 1rem auto 0;
+      padding: 0;
+      justify-content: center;
+    }
+
+    .thumbnail {
+      width: 70px;
+      // height: 70px;
+      overflow: hidden;
+      list-style: none;
+      margin: 0 0.2rem;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+    }
+    .thumbnail.is-active {
+      opacity: 1;
+    }
+  }
+  .work {
+    padding: 100px;
+  }
+}
+
 ///////////////////////////// News /////////////////////////////
 
 #news {

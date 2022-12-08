@@ -142,6 +142,17 @@
     flex-direction: column;
   }
 
+  #hotel-international {
+    display: flex;
+    flex-direction: column;
+    #main-carousel {
+      padding: 0;
+    }
+    .work {
+      padding: 10px 20px;
+    }
+  }
+
   #contatti {
     padding: 5vh 0;
     ul {
