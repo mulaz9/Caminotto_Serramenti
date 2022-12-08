@@ -225,6 +225,10 @@
   grid-column: 1 / span 2;
 }
 
+#realizzazioni .img__container {
+  height: 180px;
+}
+
 #realizzazioni .img__container:hover .overlay {
   scale: 1;
 }
@@ -267,39 +271,72 @@
   position: relative;
 }
 
-#hotel-international {
+#single-work {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   display: grid;
+  position: relative;
 }
 
-#hotel-international h1 {
+#single-work .overlay {
+  z-index: 5;
+  opacity: .7;
+  width: 100%;
+  height: 90vh;
+  transition: all .5s ease-in-out;
+  scale: 0;
+}
+
+#single-work .overlay__img {
+  z-index: 6;
+  width: 800px;
+  align-items: center;
+  transition: all .5s ease-in-out;
+  position: absolute;
+  scale: 0;
+}
+
+#single-work .overlay__img img {
+  width: 100%;
+}
+
+#single-work h1 {
   grid-column: 1 / span 2;
 }
 
-#hotel-international #main-carousel {
+#single-work #main-carousel {
   height: -moz-fit-content;
   height: fit-content;
-  padding: 50px 0;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
-#hotel-international .splide .splide__track {
+#single-work .splide {
+  width: 80%;
+}
+
+#single-work .splide .splide__track {
   height: 100%;
+  margin-top: 100px;
 }
 
-#hotel-international .splide .splide__track .splide__list .splide__slide img {
+#single-work .splide .splide__track .splide__list .splide__slide img {
   width: 100%;
-  margin-top: 80px;
+  height: 350px;
 }
 
-#hotel-international .splide .thumbnails {
+#single-work .splide .splide__track .splide__list .splide__slide img:hover {
+  cursor: pointer;
+}
+
+#single-work .splide .thumbnails {
   justify-content: center;
   margin: 1rem auto 0;
   padding: 0;
   display: flex;
 }
 
-#hotel-international .splide .thumbnail {
+#single-work .splide .thumbnail {
   width: 70px;
   cursor: pointer;
   opacity: .5;
@@ -308,17 +345,22 @@
   overflow: hidden;
 }
 
-#hotel-international .splide .thumbnail img {
+#single-work .splide .thumbnail img {
   width: 100%;
   height: 100%;
 }
 
-#hotel-international .splide .thumbnail.is-active {
+#single-work .splide .thumbnail.is-active {
   opacity: 1;
 }
 
-#hotel-international .work {
-  padding: 100px;
+#single-work .work {
+  padding: 5vh 5vh 5vw 5vw;
+}
+
+#single-work .work .work__subtitle {
+  color: #717171;
+  margin: 0;
 }
 
 #news {
@@ -511,16 +553,20 @@
     display: flex;
   }
 
-  #hotel-international {
+  #single-work {
     flex-direction: column;
     display: flex;
   }
 
-  #hotel-international #main-carousel {
+  #single-work #main-carousel {
     padding: 0;
   }
 
-  #hotel-international .work {
+  #single-work .splide {
+    width: 100%;
+  }
+
+  #single-work .work {
     padding: 10px 20px;
   }
 
@@ -860,6 +906,7 @@
 
 #richiesta-preventivo .form button {
   text-align: center;
+  grid-column: 1 / span 2;
   margin: 10vh auto;
 }
 
@@ -1091,16 +1138,20 @@
     display: flex;
   }
 
-  #hotel-international {
+  #single-work {
     flex-direction: column;
     display: flex;
   }
 
-  #hotel-international #main-carousel {
+  #single-work #main-carousel {
     padding: 0;
   }
 
-  #hotel-international .work {
+  #single-work .splide {
+    width: 100%;
+  }
+
+  #single-work .work {
     padding: 10px 20px;
   }
 

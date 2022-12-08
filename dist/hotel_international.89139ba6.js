@@ -26,6 +26,17 @@ splide.on("mounted move", function() {
         current = thumbnail;
     }
 });
+const overlay = document.querySelector(".overlay");
+const overlayImg = document.querySelector(".overlay__img");
+const mainCarousel = document.querySelector("#main-carousel");
+const classSplide = document.querySelector(".splide");
+// splide.on("click", function () {
+//   overlay.style.scale = "1";
+//   mainCarousel.style.scale = "1.3";
+//   mainCarousel.style.zIndex = "10";
+// });
 splide.mount();
+///////////////////////////////////// Activate Overlay on Click ///////////////////////////
+const link = document.querySelectorAll(".overlay__link");
 
 //# sourceMappingURL=hotel_international.89139ba6.js.map

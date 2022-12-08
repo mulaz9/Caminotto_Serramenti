@@ -142,11 +142,14 @@
     flex-direction: column;
   }
 
-  #hotel-international {
+  #single-work {
     display: flex;
     flex-direction: column;
     #main-carousel {
       padding: 0;
+    }
+    .splide {
+      width: 100%;
     }
     .work {
       padding: 10px 20px;

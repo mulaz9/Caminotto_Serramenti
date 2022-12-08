@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_dark.ico" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Yantramanav:wght@400;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./scss/variables.scss" />
+    <link rel="stylesheet" href="./scss/utilityes.scss" />
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+    <script defer src="./js/navbar&footer.js"></script>
+    <script defer src="./js/slider_other_pages.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+    <title>Caminotto Serramenti</title>
+  </head>
+  <body id="body">
+    <!-- <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="img/logo_light.jpg" alt="logo" />
+      </div>
+      <ul class="navbar__ul">
+        <li>Home</li>
+        <li>Chi<span>_</span>Siamo</li>
+        <li>Certificazioni</li>
+        <li>Prodotti</li>
+        <li>Realizzazioni</li>
+        <li>News</li>
+        <li>Contatti</li>
+      </ul>
+    </nav> -->
+
+    <section id="single-work">
+      <section id="overlay__carousel" class="overlay"></section>
+      <div class="overlay__img"></div>
+      <section
+        id="main-carousel"
+        class="splide"
+        aria-label="My Awesome Gallery"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide">
+                <a class="overlay__link" href="#">
+                  <img
+                  src="./img/Foto_lavori/Hotel_Alexander.jpg"
+                  alt=""
+                  />
+                </a>
+              </li>
+            <li class="splide__slide">
+              <a class="overlay__link" href="#">
+                <img
+                src="./img/Foto_lavori/Hotel_Alexander_piscina.jpg"
+                alt=""
+                />
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a class="overlay__link" href="#">
+                <img src="./img/Foto_lavori/hotel-bristol-come-e.jpg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul id="thumbnails" class="thumbnails">
+          <li class="thumbnail">
+            <img
+              src="./img/Foto_lavori/Hotel_Alexander.jpg"
+              alt=""
+            />
+          </li>
+          <li class="thumbnail">
+            <img src="./img/Foto_lavori/Hotel_Alexander_piscina.jpg" alt="" />
+          </li>
+          <li class="thumbnail">
+            <img src="./img/Foto_lavori/hotel-bristol-come-e.jpg" alt="" />
+          </li>
+        </ul>
+      </section>
+      <div class="work work--2">
+        <div
+          class="work__text text__left"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+        <h2 class="work__title">Hotel Alexander</h2>
+            <h4 class="work__subtitle">Location:</h4>
+            <p class="work__description">Caorle</p>
+            <h4 class="work__subtitle">Sistemi Utilizzati:</h4>
+            <p class="work__description">
+              Fornitura di serramenti in alluminio taglio termico, a battente e
+              scorrevoli con vetrocamera selettivo. Fornitura di vetrate
+              scorrevoli presso nuova ala “Ristorante Bea Vita”.
+            </p>
+        </div>
+    </section>
+    <footer id="footer">
+      <!-- <div class="footer__contatti">
+        <h2 class="footer__title">Contatti</h2>
+        <div class="footer__links">
+          <p>
+            <a href="tel: +390421316884">
+              <iconify-icon icon="mdi:telephone"></iconify-icon>
+              <span>_</span>+39 0421316884
+            </a>
+          </p>
+          <p>
+            <a href="mailto: info@caminottoserramenti.it">
+              <iconify-icon icon="material-symbols:mail"></iconify-icon>
+              <span>_</span>
+              info@caminottoserramenti.it
+            </a>
+          </p>
+          <p>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/CAMINOTTO+SERRAMENTI/@45.6986831,12.6906339,15z/data=!4m2!3m1!1s0x0:0xb4ca935ce8077423?sa=X&ved=2ahUKEwjyjP3ui8n7AhUXSfEDHau-BWYQ_BJ6BAhjEAg"
+            >
+              <iconify-icon icon="fa-solid:map-marker-alt"></iconify-icon>
+              <span>--</span>
+              Via Triestina, 4<br /><span>-----</span>30020 - Torre di mosto
+              (VE)</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer__link--utili">
+        <h2>Link Utili</h2>
+        <div class="footer__links">
+          <p><a href="">Serramenti in alluminio</a></p>
+          <p><a href="">Serramenti in PVC</a></p>
+          <p><a href="">Schermature solari</a></p>
+          <p><a href="">Controtelai isolanti</a></p>
+          <p><a href="">Opere in vetro</a></p>
+        </div>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/caminottoserramenti/" target="_blank"
+          ><iconify-icon
+            class="social__icon"
+            icon="ic:baseline-facebook"
+            width="60"
+          ></iconify-icon
+        ></a>
+        <a href="https://www.instagram.com/caminottoserramen/" target="_blank"
+          ><iconify-icon
+            class="social__icon"
+            icon="uil:instagram"
+            width="60"
+          ></iconify-icon
+        ></a>
+      </div>
+      <p class="copyright">
+        Caminotto Serramenti &copy; 2022, All Rights Reserved
+      </p> -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
