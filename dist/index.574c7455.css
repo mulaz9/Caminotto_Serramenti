@@ -492,7 +492,19 @@
   }
 
   .splide__track .overlay {
-    width: 100vw;
+    display: none;
+  }
+
+  .splide__track .splide__list .slide--1 {
+    background: url("bg_slider_mobile_overlay.b519b6f2.png") center / cover no-repeat;
+  }
+
+  .splide__track .splide__list .slide--2 {
+    background: url("consulenza_overlay.jpg.b95648a0.png") center / cover no-repeat;
+  }
+
+  .splide__track .splide__list .slide--3 {
+    background: url("news_overlay.02b1de59.png") center / cover no-repeat;
   }
 
   #cards-bar {
@@ -1139,7 +1151,19 @@
   }
 
   .splide__track .overlay {
-    width: 100vw;
+    display: none;
+  }
+
+  .splide__track .splide__list .slide--1 {
+    background: url("bg_slider_mobile_overlay.b519b6f2.png") center / cover no-repeat;
+  }
+
+  .splide__track .splide__list .slide--2 {
+    background: url("consulenza_overlay.jpg.b95648a0.png") center / cover no-repeat;
+  }
+
+  .splide__track .splide__list .slide--3 {
+    background: url("news_overlay.02b1de59.png") center / cover no-repeat;
   }
 
   #cards-bar {
