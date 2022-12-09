@@ -588,6 +588,20 @@
     padding-right: 10px;
   }
 
+  #chi-siamo {
+    flex-direction: column;
+    padding: 3vh;
+    display: flex;
+  }
+
+  #chi-siamo .main__text {
+    padding: 0;
+  }
+
+  #chi-siamo img {
+    width: 100%;
+  }
+
   #certificazioni {
     flex-direction: column;
     padding: 5vh 5vw;
@@ -1219,6 +1233,20 @@
 
   #footer .footer__social .social__icon {
     padding-right: 10px;
+  }
+
+  #chi-siamo {
+    flex-direction: column;
+    padding: 3vh;
+    display: flex;
+  }
+
+  #chi-siamo .main__text {
+    padding: 0;
+  }
+
+  #chi-siamo img {
+    width: 100%;
   }
 
   #certificazioni {

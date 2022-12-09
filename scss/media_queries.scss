@@ -44,7 +44,21 @@
       line-height: 4rem;
     }
     .overlay {
-      width: 100vw;
+      display: none;
+    }
+    .splide__list {
+      .slide--1 {
+        background: url(../img/Dummy_imgs/infissi-in-legno-alluminio-1_overlay.png)
+          no-repeat center/cover;
+      }
+      .slide--2 {
+        background: url(../img/Dummy_imgs/consulenza_overlay.jpg.png) no-repeat
+          center/cover;
+      }
+      .slide--3 {
+        background: url(../img/Dummy_imgs/news_overlay.png) no-repeat
+          center/cover;
+      }
     }
   }
 
@@ -139,6 +153,19 @@
   }
 
   //////////// Other Pages ///////////////////////
+
+  #chi-siamo {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    .main__text {
+      padding: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
   #certificazioni {
     display: flex;
     flex-direction: column;
