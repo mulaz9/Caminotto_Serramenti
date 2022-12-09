@@ -95,3 +95,7 @@ h1 {
   display: flex;
   flex-direction: column-reverse;
 }
+
+.current {
+  color: $medium-color;
+}

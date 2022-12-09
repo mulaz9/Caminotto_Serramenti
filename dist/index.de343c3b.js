@@ -11,9 +11,9 @@ const navbarMarkup = function() {
   </div>
   <div class="navbar__ul--container">
     <ul class="navbar__ul">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="chi_siamo.html">Chi<span>_</span>Siamo</a></li>
-      <li><a href="certificazioni.html">Certificazioni</a></li>
+      <li><a class="home" href="index.html">Home</a></li>
+      <li><a class="chi_siamo" href="chi_siamo.html">Chi<span>_</span>Siamo</a></li>
+      <li><a class="certificazioni" href="certificazioni.html">Certificazioni</a></li>
       <li class="navbar__prodotti"><a class="prodotti__link" href="#">Prodotti</a>
         <ul class="prodotti__ul">
           <li>
@@ -32,9 +32,9 @@ const navbarMarkup = function() {
           </li>
         </ul>
       </li>
-      <li><a href="realizzazioni.html">Realizzazioni</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contatti.html">Contatti</a></li>
+      <li><a class="realizzazioni" href="realizzazioni.html">Realizzazioni</a></li>
+      <li><a class="news" href="news.html">News</a></li>
+      <li><a class="contatti" href="contatti.html">Contatti</a></li>
     </ul>
   </div>
   <div class="menu-wrap">
@@ -50,22 +50,22 @@ const navbarMarkup = function() {
         <li><a href="index.html">Home</a></li>
         <li><a href="chi_siamo.html">Chi Siamo</a></li>
         <li><a href="certificazioni.html">Certificazioni</a></li>
-        <li class="prodotti"><a href="#">Prodotti<span class="arrow--down"><iconify-icon inline icon="material-symbols:keyboard-arrow-down-rounded" width="32"></iconify-icon></span
-              ><span class="arrow--up hidden"><iconify-icon inline icon="material-symbols:keyboard-arrow-up-rounded" width="32"></iconify-icon></span></a>
+        <li class="prodotti">Prodotti<span class="arrow--down"><iconify-icon inline icon="material-symbols:keyboard-arrow-down-rounded" width="32"></iconify-icon></span
+              ><span class="arrow--up hidden"><iconify-icon inline icon="material-symbols:keyboard-arrow-up-rounded" width="32"></iconify-icon></span>
           <ul class="menu--prodotti__ul hidden">
             <li>
-             <a href="prodotti.html">Serramenti in alluminio</a>
+             <a class="submenu__link" href="prodotti.html">Serramenti in alluminio</a>
             </li>
             <li>
-             <a href="./prodotti.html#serramenti-in-pvc">Serramenti in pvc</a></li>
+             <a class="submenu__link" href="./prodotti.html#serramenti-in-pvc">Serramenti in pvc</a></li>
             <li>
-              <a href="./prodotti.html#schermature-solari">Schermature Solari</a>
+              <a class="submenu__link" href="./prodotti.html#schermature-solari">Schermature Solari</a>
             </li>
             <li>
-              <a href="./prodotti.html#controtelai-isolanti">Controtelai isolanti</a>
+              <a class="submenu__link" href="./prodotti.html#controtelai-isolanti">Controtelai isolanti</a>
             </li>
             <li>
-             <a href="./prodotti.html#opere-in-vetro">Opere in vetro</a>
+             <a class="submenu__link" href="./prodotti.html#opere-in-vetro">Opere in vetro</a>
             </li>
           </ul>
         </li>
@@ -207,6 +207,7 @@ const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const menuLine1 = document.querySelector(".line--1");
 const menuLine2 = document.querySelector(".line--2");
+const submenuLink = document.querySelectorAll(".submenu__link");
 let menuIsOpened = false;
 const showMenu = function() {
     hamburger.addEventListener("click", function() {
@@ -231,6 +232,16 @@ const showMenu = function() {
             menuIsOpened = false;
         }
     });
+    submenuLink.forEach((link)=>link.addEventListener("click", function() {
+            html.style.overflow = "auto";
+            menuLine1.style.transform = "rotate(0deg)";
+            menuLine1.style.top = "32px";
+            menuLine2.style.transform = "rotate(0deg)";
+            menuLine2.style.top = "42px";
+            menuLine2.style.width = "28px";
+            menu.style.transform = "translateX(150%)";
+            menuIsOpened = false;
+        }));
 };
 showMenu();
 ////////////////////////////////////////// Show Submenu /////////////////////////////////////////

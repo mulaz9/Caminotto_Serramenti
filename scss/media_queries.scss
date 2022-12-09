@@ -2,6 +2,9 @@
   .navbar {
     height: 20vh;
   }
+  .menu {
+    top: 20vh;
+  }
   .navbar__ul--container {
     display: none;
   }
@@ -22,7 +25,7 @@
 
 @media (max-width: 414px) {
   .navbar {
-    height: 15vh;
+    height: 10vh;
   }
   .navbar__ul--container {
     display: none;

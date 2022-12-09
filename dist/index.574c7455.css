@@ -102,6 +102,30 @@
   font-size: .8rem;
 }
 
+#chi-siamo {
+  grid-template-columns: 2fr 3fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  display: grid;
+}
+
+#chi-siamo h1 {
+  grid-column: 1 / span 2;
+  padding-bottom: 50px;
+}
+
+#chi-siamo .main__text {
+  padding: 50px;
+}
+
+#chi-siamo img {
+  width: 80%;
+  border-radius: 5px;
+  margin: auto;
+}
+
 #certificazioni {
   grid-gap: 100px;
   grid-template-columns: 1fr 2fr;
@@ -419,6 +443,10 @@
     height: 20vh;
   }
 
+  .menu {
+    top: 20vh;
+  }
+
   .navbar__ul--container {
     display: none;
   }
@@ -438,7 +466,7 @@
 
 @media (max-width: 414px) {
   .navbar {
-    height: 15vh;
+    height: 10vh;
   }
 
   .navbar__ul--container {
@@ -1048,6 +1076,10 @@
     height: 20vh;
   }
 
+  .menu {
+    top: 20vh;
+  }
+
   .navbar__ul--container {
     display: none;
   }
@@ -1067,7 +1099,7 @@
 
 @media (max-width: 414px) {
   .navbar {
-    height: 15vh;
+    height: 10vh;
   }
 
   .navbar__ul--container {

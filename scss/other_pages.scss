@@ -1,4 +1,27 @@
-// Certificazioni
+///////////////////////////////////// Chi siamo /////////////////////////////////////////
+
+#chi-siamo {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  h1 {
+    grid-column: 1 / span 2;
+    padding-bottom: 50px;
+  }
+  .main__text {
+    padding: 50px;
+  }
+  img {
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+  }
+}
+
+//////////////////////////////////// Certificazioni ///////////////////////////////////
 
 #certificazioni {
   display: grid;
