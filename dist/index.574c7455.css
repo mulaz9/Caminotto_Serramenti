@@ -152,7 +152,7 @@
   padding: 0 30px;
 }
 
-#serramenti-in-alluminio {
+#serramenti-in-alluminio, #serramenti-in-pvc {
   grid-gap: 70px;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -162,11 +162,17 @@
   display: grid;
 }
 
-#serramenti-in-alluminio h1 {
+#serramenti-in-alluminio h1, #serramenti-in-pvc h1 {
   grid-column: 1 / span 2;
 }
 
-#serramenti-in-alluminio .serramenti__content {
+#serramenti-in-alluminio .serramenti__content, #serramenti-in-pvc .serramenti__content {
+  margin: auto;
+}
+
+#serramenti-in-alluminio img, #serramenti-in-pvc img {
+  width: 100%;
+  border-radius: 5px;
   margin: auto;
 }
 
