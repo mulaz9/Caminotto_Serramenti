@@ -165,6 +165,17 @@ const footerMarkup = function() {
         (VE)</a
       >
     </p>
+    <p>
+      <a
+        target="_blank"
+        href="https://www.google.com/maps/place/Via+Livenza,+3,+30022+Ceggia+VE/@45.6777978,12.633703,21z/data=!4m5!3m4!1s0x4779581342861a27:0x56328c40c04bbe12!8m2!3d45.6778429!4d12.6337893"
+      >
+        <iconify-icon icon="fa-solid:map-marker-alt"></iconify-icon>
+        <span>--</span>
+        Via Livenza, 3<br /><span>-----</span>30022 - Ceggia
+        (VE)</a
+      >
+    </p>
   </div>
 </div>
 <div class="footer__link--utili">

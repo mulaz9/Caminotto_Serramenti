@@ -201,7 +201,7 @@
 
 // Realizzazioni home
 #home-realizzazioni {
-  padding: 0 10vw;
+  margin: 0 10vw;
   button {
     margin: 5vh auto;
   }
@@ -209,10 +209,11 @@
     margin-bottom: 10vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     img {
       width: 80%;
+      border-radius: 5px;
     }
     .presentazione__text {
       text-align: left;
