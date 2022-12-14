@@ -380,7 +380,14 @@
   }
   .footer__social {
     margin: auto 0;
+    align-items: center;
+    text-align: center;
+    .iubenda-cs-preferences-link {
+      padding: 20px;
+      font-size: 0.6rem;
+    }
   }
+
   .copyright {
     padding-top: 50px;
     font-size: 0.7rem;
