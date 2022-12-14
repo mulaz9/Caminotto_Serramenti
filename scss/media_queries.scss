@@ -27,7 +27,7 @@
   }
   #cards-bar {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     height: fit-content;
     padding: 0;
     &:hover {
@@ -253,10 +253,8 @@
 
 // mobile
 @media (max-width: 414px) {
-  .navbar {
-    .navbar__logo {
-      width: 200px;
-    }
+  .navbar__logo {
+    width: 200px;
   }
   .navbar__ul--container {
     display: none;
