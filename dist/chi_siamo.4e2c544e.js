@@ -1,0 +1,2 @@
+"use strict";const splide=new Splide(".splide",{type:"loop",perPage:1,arrows:!1,pagination:!1,autoplay:!0,speed:1500,pauseOnHover:!1,keyboard:"global"}),splideTrack=document.querySelector(".splide__track"),bar=document.querySelector(".my-slider-progress-bar");splide.on("mounted move",(function(){const e=splide.Components.Controller.getEnd()+1,o=Math.min((splide.index+1)/e,1);bar.style.width=String(100*o)+"%"})),splide.mount();
+//# sourceMappingURL=chi_siamo.4e2c544e.js.map

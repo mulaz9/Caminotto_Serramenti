@@ -99,11 +99,11 @@
 .menu div ul li .menu--prodotti__ul li {
   text-transform: uppercase;
   border: none;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 #chi-siamo {
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -116,14 +116,50 @@
   padding-bottom: 50px;
 }
 
-#chi-siamo .main__text {
-  padding: 50px;
+#chi-siamo #main-carousel {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
-#chi-siamo img {
+#chi-siamo .splide {
   width: 80%;
-  border-radius: 5px;
-  margin: auto;
+}
+
+#chi-siamo .splide .splide__arrow {
+  color: #fff;
+  background-color: #0000;
+}
+
+#chi-siamo .splide .splide__track {
+  height: 100%;
+  margin-top: 50px;
+}
+
+#chi-siamo .splide .splide__track .splide__list .splide__slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+#chi-siamo .splide .splide__track .splide__list .splide__slide img:hover {
+  cursor: pointer;
+}
+
+#chi-siamo .my-slider-progress {
+  background: #717171;
+}
+
+#chi-siamo .my-slider-progress .my-slider-progress-bar {
+  height: .5vh;
+  width: 0;
+  background: #be1624;
+  transition: width .4s;
+}
+
+#chi-siamo .main__text {
+  padding: 50px;
 }
 
 #certificazioni {
@@ -217,6 +253,26 @@
 
 #controtelai-isolanti img {
   width: 100%;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#zanzariere {
+  grid-gap: 70px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  display: grid;
+}
+
+#zanzariere h1 {
+  grid-column: 1 / span 2;
+}
+
+#zanzariere img {
+  width: 70%;
   border-radius: 5px;
   margin: auto;
 }
@@ -405,16 +461,83 @@
 }
 
 #news {
-  height: 50vh;
   text-align: center;
-  justify-content: center;
+  grid-gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10vh 2vw;
+  display: grid;
+}
+
+#news h1 {
+  grid-column: 1 / span 4;
+}
+
+#news .news {
+  text-align: left;
+  background-color: #bbbaba;
+  border-radius: 5px;
+  grid-template-columns: 1fr;
   align-items: center;
-  display: flex;
+  margin: 10vh 0;
+  transition: all .3s ease-in-out;
+  display: grid;
+}
+
+#news .news img {
+  width: 100%;
+  height: 100%;
+}
+
+#news .news .news__title {
+  padding: 5px 30px;
+}
+
+#news .news:hover {
+  scale: 1.1;
+}
+
+#single-news {
+  display: felx;
+  flex-direction: column;
+}
+
+#single-news .single__news--card {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 10vh 2vw;
+  display: grid;
+}
+
+#single-news .single__news--card img {
+  width: 100%;
+}
+
+#single-news .card__text {
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  display: grid;
 }
 
 #contatti {
   text-align: center;
+  flex-direction: column;
+  align-items: center;
   padding: 10vh;
+  display: flex;
+}
+
+#contatti h1 {
+  grid-column: 1 / span 2;
+}
+
+#contatti h5 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.6rem;
+}
+
+#contatti span {
+  color: #0000;
 }
 
 #contatti ul {
@@ -434,16 +557,6 @@
   display: flex;
 }
 
-#contatti ul li a span {
-  color: #0000;
-}
-
-#contatti ul li a h5 {
-  margin: 0;
-  padding: 10px 0;
-  font-size: 1.6rem;
-}
-
 @media (max-width: 850px) {
   .navbar {
     height: 15vh;
@@ -451,10 +564,6 @@
 
   .navbar .navbar__logo {
     width: 250px;
-  }
-
-  .navbar .navbar__logo img {
-    width: 100%;
   }
 
   .menu {
@@ -582,7 +691,7 @@
     padding: 0;
   }
 
-  #chi-siamo img {
+  #chi-siamo .splide {
     width: 100%;
   }
 
@@ -600,13 +709,13 @@
     width: 90%;
   }
 
-  #serramenti-in-alluminio, #serramenti-in-pvc, #schermature-solari, #controtelai-isolanti, #opere-in-vetro {
+  #serramenti-in-alluminio, #serramenti-in-pvc, #schermature-solari, #controtelai-isolanti, #opere-in-vetro, #zanzariere {
     flex-direction: column;
     padding: 5vw;
     display: flex;
   }
 
-  #serramenti-in-alluminio h2, #serramenti-in-pvc h2, #schermature-solari h2, #controtelai-isolanti h2, #opere-in-vetro h2 {
+  #serramenti-in-alluminio h2, #serramenti-in-pvc h2, #schermature-solari h2, #controtelai-isolanti h2, #opere-in-vetro h2, #zanzariere h2 {
     font-size: 1.5rem;
   }
 
@@ -651,12 +760,51 @@
     justify-content: center;
   }
 
+  #news {
+    flex-direction: column;
+    padding: 5vh 0;
+    display: flex;
+  }
+
+  #news .news {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #single-news .single__news--card {
+    grid-template-columns: 1fr;
+  }
+
+  #single-news .single__news--card .btn__dark {
+    width: 100%;
+    justify-content: center;
+  }
+
   #contatti, #contatti ul {
     padding: 5vh 0;
   }
 }
 
-@media (max-width: 850px) and (max-height: 400px) {
+@media (max-width: 896px) and (max-height: 414px) {
+  .navbar {
+    height: 20vh;
+  }
+
+  .navbar .navbar__logo {
+    width: 200px;
+  }
+
+  .menu {
+    top: 20vh;
+  }
+
+  .navbar__ul--container {
+    display: none;
+  }
+
+  .navbar .menu-wrap {
+    display: flex;
+  }
+
   h1 {
     font-size: 1.7rem;
   }
@@ -667,6 +815,10 @@
 }
 
 @media (max-width: 414px) {
+  .navbar__logo {
+    width: 200px;
+  }
+
   .navbar__ul--container {
     display: none;
   }
@@ -808,7 +960,7 @@
     padding: 0;
   }
 
-  #chi-siamo img {
+  #chi-siamo .splide {
     width: 100%;
   }
 
@@ -826,13 +978,13 @@
     width: 90%;
   }
 
-  #serramenti-in-alluminio, #serramenti-in-pvc, #schermature-solari, #controtelai-isolanti, #opere-in-vetro {
+  #serramenti-in-alluminio, #serramenti-in-pvc, #schermature-solari, #controtelai-isolanti, #opere-in-vetro, #zanzariere {
     flex-direction: column;
     padding: 5vw;
     display: flex;
   }
 
-  #serramenti-in-alluminio h2, #serramenti-in-pvc h2, #schermature-solari h2, #controtelai-isolanti h2, #opere-in-vetro h2 {
+  #serramenti-in-alluminio h2, #serramenti-in-pvc h2, #schermature-solari h2, #controtelai-isolanti h2, #opere-in-vetro h2, #zanzariere h2 {
     font-size: 1.5rem;
   }
 
@@ -873,6 +1025,21 @@
   }
 
   #single-work .work .btn__dark {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #news {
+    flex-direction: column;
+    padding: 5vh 0;
+    display: flex;
+  }
+
+  #news .news, #single-news .single__news--card {
+    grid-template-columns: 1fr;
+  }
+
+  #single-news .single__news--card .btn__dark {
     width: 100%;
     justify-content: center;
   }
@@ -1042,9 +1209,9 @@
 #cards-bar {
   grid-gap: 20px;
   height: 20vh;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
-  margin: 15vh 4vw;
+  margin: 15vh 1vw;
   padding: 20px;
   display: grid;
 }
@@ -1095,6 +1262,10 @@
 }
 
 #cards-bar .card--5 {
+  background: url("mosquito-19487_1920.24d00d77.jpg") center / cover no-repeat;
+}
+
+#cards-bar .card--6 {
   background: url("opere_in_vetro.98bdc8fc.jpg") center / cover no-repeat;
 }
 
@@ -1305,10 +1476,6 @@
     width: 250px;
   }
 
-  .navbar .navbar__logo img {
-    width: 100%;
-  }
-
   .menu {
     top: 15vh;
   }
@@ -1434,7 +1601,7 @@
     padding: 0;
   }
 
-  #chi-siamo img {
+  #chi-siamo .splide {
     width: 100%;
   }
 
@@ -1452,13 +1619,13 @@
     width: 90%;
   }
 
-  #serramenti-in-alluminio, #serramenti-in-pvc, #schermature-solari, #controtelai-isolanti, #opere-in-vetro {
+  #serramenti-in-alluminio, #serramenti-in-pvc, #schermature-solari, #controtelai-isolanti, #opere-in-vetro, #zanzariere {
     flex-direction: column;
     padding: 5vw;
     display: flex;
   }
 
-  #serramenti-in-alluminio h2, #serramenti-in-pvc h2, #schermature-solari h2, #controtelai-isolanti h2, #opere-in-vetro h2 {
+  #serramenti-in-alluminio h2, #serramenti-in-pvc h2, #schermature-solari h2, #controtelai-isolanti h2, #opere-in-vetro h2, #zanzariere h2 {
     font-size: 1.5rem;
   }
 
@@ -1503,12 +1670,51 @@
     justify-content: center;
   }
 
+  #news {
+    flex-direction: column;
+    padding: 5vh 0;
+    display: flex;
+  }
+
+  #news .news {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #single-news .single__news--card {
+    grid-template-columns: 1fr;
+  }
+
+  #single-news .single__news--card .btn__dark {
+    width: 100%;
+    justify-content: center;
+  }
+
   #contatti, #contatti ul {
     padding: 5vh 0;
   }
 }
 
-@media (max-width: 850px) and (max-height: 400px) {
+@media (max-width: 896px) and (max-height: 414px) {
+  .navbar {
+    height: 20vh;
+  }
+
+  .navbar .navbar__logo {
+    width: 200px;
+  }
+
+  .menu {
+    top: 20vh;
+  }
+
+  .navbar__ul--container {
+    display: none;
+  }
+
+  .navbar .menu-wrap {
+    display: flex;
+  }
+
   h1 {
     font-size: 1.7rem;
   }
@@ -1519,6 +1725,10 @@
 }
 
 @media (max-width: 414px) {
+  .navbar__logo {
+    width: 200px;
+  }
+
   .navbar__ul--container {
     display: none;
   }
@@ -1660,7 +1870,7 @@
     padding: 0;
   }
 
-  #chi-siamo img {
+  #chi-siamo .splide {
     width: 100%;
   }
 
@@ -1678,13 +1888,13 @@
     width: 90%;
   }
 
-  #serramenti-in-alluminio, #serramenti-in-pvc, #schermature-solari, #controtelai-isolanti, #opere-in-vetro {
+  #serramenti-in-alluminio, #serramenti-in-pvc, #schermature-solari, #controtelai-isolanti, #opere-in-vetro, #zanzariere {
     flex-direction: column;
     padding: 5vw;
     display: flex;
   }
 
-  #serramenti-in-alluminio h2, #serramenti-in-pvc h2, #schermature-solari h2, #controtelai-isolanti h2, #opere-in-vetro h2 {
+  #serramenti-in-alluminio h2, #serramenti-in-pvc h2, #schermature-solari h2, #controtelai-isolanti h2, #opere-in-vetro h2, #zanzariere h2 {
     font-size: 1.5rem;
   }
 
@@ -1725,6 +1935,21 @@
   }
 
   #single-work .work .btn__dark {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #news {
+    flex-direction: column;
+    padding: 5vh 0;
+    display: flex;
+  }
+
+  #news .news, #single-news .single__news--card {
+    grid-template-columns: 1fr;
+  }
+
+  #single-news .single__news--card .btn__dark {
     width: 100%;
     justify-content: center;
   }

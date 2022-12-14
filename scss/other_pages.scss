@@ -2,7 +2,7 @@
 
 #chi-siamo {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -11,13 +11,45 @@
     grid-column: 1 / span 2;
     padding-bottom: 50px;
   }
+  #main-carousel {
+    height: fit-content;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .splide {
+    width: 80%;
+    .splide__arrow {
+      background-color: transparent;
+      color: $light-color;
+    }
+    .splide__track {
+      height: 100%;
+      margin-top: 50px;
+      .splide__list {
+        .splide__slide {
+          img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .my-slider-progress {
+    background: $medium-color;
+    .my-slider-progress-bar {
+      background: $primary-color;
+      height: 0.5vh;
+      transition: width 400ms ease;
+      width: 0;
+    }
+  }
   .main__text {
     padding: 50px;
-  }
-  img {
-    width: 80%;
-    border-radius: 5px;
-    margin: auto;
   }
 }
 
@@ -108,6 +140,24 @@
   }
   img {
     width: 100%;
+    margin: auto;
+    border-radius: 5px;
+  }
+}
+
+#zanzariere {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+  h1 {
+    grid-column: 1 / span 2;
+  }
+  img {
+    width: 70%;
     margin: auto;
     border-radius: 5px;
   }
@@ -285,17 +335,73 @@
 ///////////////////////////// News /////////////////////////////
 
 #news {
-  height: 50vh;
+  padding: 10vh 2vw;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  h1 {
+    grid-column: 1 / span 4;
+  }
+  .news {
+    margin: 10vh 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 5px;
+    background-color: $h3-color;
+    text-align: left;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .news__title {
+      padding: 5px 30px;
+    }
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+#single-news {
+  display: felx;
+  flex-direction: column;
+  .single__news--card {
+    padding: 10vh 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  .card__text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
 }
 
 ////////////////////////////// Contatti /////////////////////////////
 #contatti {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
   padding: 10vh;
+  h1 {
+    grid-column: 1 / span 2;
+  }
+  h5 {
+    margin: 0;
+    font-size: 1.6rem;
+    padding: 10px 0;
+  }
+  span {
+    color: transparent;
+  }
   ul {
     display: inline-block;
     padding: 3vh 0;
@@ -307,14 +413,6 @@
       a {
         display: flex;
         flex-direction: column;
-        span {
-          color: transparent;
-        }
-        h5 {
-          margin: 0;
-          font-size: 1.6rem;
-          padding: 10px 0;
-        }
       }
     }
   }

@@ -30,6 +30,9 @@ const navbarMarkup = function () {
             <a href="./prodotti.html#controtelai-isolanti">Controtelai isolanti</a>
           </li>
           <li>
+            <a href="./prodotti.html#zanzariere">Zanzariere</a>
+          </li>
+          <li>
             <a href="./prodotti.html#opere-in-vetro">Opere in vetro</a>
           </li>
         </ul>
@@ -199,6 +202,7 @@ const footerMarkup = function () {
     <p><a href="./prodotti.html#serramenti-in-pvc">Serramenti in PVC</a></p>
     <p><a href="./prodotti.html#schermature-solari">Schermature solari</a></p>
     <p><a href="./prodotti.html#controtelai-isolanti">Controtelai isolanti</a></p>
+    <p><a href="./prodotti.html#zanzariere">Zanzariere</a></p>
     <p><a href="./prodotti.html#opere-in-vetro">Opere in vetro</a></p>
   </div>
 </div>
@@ -218,9 +222,9 @@ const footerMarkup = function () {
     ></iconify-icon
   ></a>
 </div>
-<p class="copyright">
-  Caminotto Serramenti &copy; 2022, All Rights Reserved
-</p>
+<h6 class="copyright">
+  CDF-GROUP SRLS &copy; 2022, All Rights Reserved<br> P.I. e C.F. 04493220273 PEC: cdf-groupsrls@pecimprese.it
+</h6>
   `;
 };
 

@@ -148,9 +148,9 @@
 
 // Cards bar
 #cards-bar {
-  margin: 15vh 4vw;
+  margin: 15vh 1vw;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
   padding: 20px;
   height: 20vh;
@@ -195,6 +195,10 @@
     background: url(../img/Dummy_imgs/controtelai.jpg) no-repeat center/cover;
   }
   .card--5 {
+    background: url(../img/Dummy_imgs/mosquito-19487_1920.jpg) no-repeat
+      center/cover;
+  }
+  .card--6 {
     background: url(../img/Dummy_imgs/opere_in_vetro.jpg) no-repeat center/cover;
   }
 }

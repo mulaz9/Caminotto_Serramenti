@@ -23,6 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
     <script defer src="./js/navbar&footer.js"></script>
     <script defer src="./js/current_chi_siamo.js"></script>
+    <script defer src="./js/slider_chi_siamo.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
     <title>Caminotto Serramenti</title>
@@ -44,7 +45,50 @@
     </nav> -->
     <section id="chi-siamo">
       <h1 data-aos="zoom-in" data-aos-duration="1000">Chi Siamo</h1>
-      <img src="./img/Foto_particolari/baby.jpg" alt="" />
+      <section
+        id="main-carousel"
+        class="splide"
+        aria-label="My Awesome Gallery"
+      >
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <iconify-icon
+              icon="material-symbols:arrow-back-ios-new-rounded"
+              width="32"
+            ></iconify-icon>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <iconify-icon
+              icon="material-symbols:arrow-forward-ios-rounded"
+              width="32"
+            ></iconify-icon>
+          </button>
+        </div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <a class="overlay__link" href="#">
+                <img src="./img/Foto_particolari/baby.jpg" alt="" />
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a class="overlay__link" href="#">
+                <img src="./img/Foto_particolari/foto_chi_siamo.jpg" alt="" />
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a class="overlay__link" href="#">
+                <img src="./img/Foto_particolari/foto_chi_siamo_gru.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Add the progress bar element -->
+        <div class="my-slider-progress">
+          <div class="my-slider-progress-bar"></div>
+        </div>
+      </div>
+      </section>
       <p class="main__text">
         Caminotto Serramenti con esperienza ventennale, è attiva nelle province
         di Venezia, Treviso e Pordenone. La nostra sede ha un’area espositiva di
