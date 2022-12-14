@@ -860,7 +860,7 @@
   #cards-bar {
     height: -moz-fit-content;
     height: fit-content;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 1fr;
     padding: 0;
   }
@@ -1770,7 +1770,7 @@
   #cards-bar {
     height: -moz-fit-content;
     height: fit-content;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 1fr;
     padding: 0;
   }
