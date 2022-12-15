@@ -523,6 +523,16 @@
   display: grid;
 }
 
+#single-news .card__text .infofiscale__link {
+  color: #717171;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+#single-news .card__text .infofiscale__link:hover {
+  color: #be1624;
+}
+
 #contatti {
   text-align: center;
   flex-direction: column;
