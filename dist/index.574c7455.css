@@ -464,6 +464,7 @@
   text-align: center;
   grid-gap: 50px;
   grid-template-columns: repeat(4, 1fr);
+  align-items: baseline;
   padding: 10vh 2vw;
   display: grid;
 }
@@ -474,7 +475,6 @@
 
 #news .news {
   text-align: left;
-  background-color: #bbbaba;
   border-radius: 5px;
   grid-template-columns: 1fr;
   align-items: center;
@@ -488,7 +488,13 @@
 }
 
 #news .news .news__title {
+  height: 150px;
+  background-color: #bbbaba;
+  justify-content: center;
+  align-items: center;
   padding: 5px 30px;
+  display: flex;
+  box-shadow: 5px 5px #be1624;
 }
 
 #news .news:hover {
