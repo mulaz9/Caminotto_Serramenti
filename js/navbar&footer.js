@@ -70,6 +70,9 @@ const navbarMarkup = function () {
               <a class="submenu__link" href="./prodotti.html#controtelai-isolanti">Controtelai isolanti</a>
             </li>
             <li>
+            <a href="./prodotti.html#zanzariere">Zanzariere</a>
+          </li>
+            <li>
              <a class="submenu__link" href="./prodotti.html#opere-in-vetro">Opere in vetro</a>
             </li>
           </ul>
