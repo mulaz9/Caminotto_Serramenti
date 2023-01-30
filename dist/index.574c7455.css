@@ -1410,10 +1410,6 @@
   position: relative;
 }
 
-#richiesta-preventivo .form .item--4 {
-  grid-area: 2 / 2 / span 2;
-}
-
 #richiesta-preventivo .form button {
   text-align: center;
   grid-column: 1 / span 2;
@@ -1440,10 +1436,6 @@
   padding: 10px;
   font-family: Yantramanav, sans-serif;
   font-size: 1.1rem;
-}
-
-#richiesta-preventivo .form .form__item textarea {
-  height: 100%;
 }
 
 #map {

@@ -300,10 +300,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    .item--4 {
-      grid-column: 2;
-      grid-row: 2 / span 2;
-    }
+    // .item--4 {
+    //   grid-column: 2;
+    //   grid-row: 2 / span 2;
+    // }
     button {
       margin: 10vh auto;
       text-align: center;
@@ -327,9 +327,6 @@
         padding: 10px;
         font-family: Yantramanav, sans-serif;
         font-size: 1.1rem;
-      }
-      textarea {
-        height: 100%;
       }
     }
   }
