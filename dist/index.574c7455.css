@@ -633,7 +633,7 @@
   }
 
   #home-certificazioni .certificazioni__content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     display: flex;
   }
 
@@ -645,6 +645,7 @@
   }
 
   #home-certificazioni .certificazioni__content .certificazioni__loghi img {
+    width: 100%;
     padding: 0;
   }
 
@@ -835,7 +836,7 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 420px) {
   .navbar__logo {
     width: 200px;
   }
@@ -908,7 +909,7 @@
   }
 
   #home-certificazioni .certificazioni__content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     display: flex;
   }
 
@@ -920,6 +921,7 @@
   }
 
   #home-certificazioni .certificazioni__content .certificazioni__loghi img {
+    width: 100%;
     padding: 0;
   }
 
@@ -1377,7 +1379,7 @@
 }
 
 #home-certificazioni .certificazioni__content {
-  grid-template-columns: 5fr 4fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   margin: 10vh auto auto;
@@ -1385,13 +1387,14 @@
 }
 
 #home-certificazioni .certificazioni__content .certificazioni__loghi {
-  flex-direction: column;
-  align-items: end;
-  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  display: grid;
 }
 
 #home-certificazioni .certificazioni__content .certificazioni__loghi img {
   width: 50%;
+  margin: auto;
   padding: 20px;
 }
 
@@ -1558,7 +1561,7 @@
   }
 
   #home-certificazioni .certificazioni__content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     display: flex;
   }
 
@@ -1570,6 +1573,7 @@
   }
 
   #home-certificazioni .certificazioni__content .certificazioni__loghi img {
+    width: 100%;
     padding: 0;
   }
 
@@ -1760,7 +1764,7 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 420px) {
   .navbar__logo {
     width: 200px;
   }
@@ -1833,7 +1837,7 @@
   }
 
   #home-certificazioni .certificazioni__content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     display: flex;
   }
 
@@ -1845,6 +1849,7 @@
   }
 
   #home-certificazioni .certificazioni__content .certificazioni__loghi img {
+    width: 100%;
     padding: 0;
   }
 

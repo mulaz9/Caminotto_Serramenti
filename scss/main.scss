@@ -274,14 +274,15 @@
     margin: auto;
     margin-top: 10vh;
     display: grid;
-    grid-template-columns: 5fr 4fr;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
     .certificazioni__loghi {
-      align-items: end;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
       img {
+        margin: auto;
         width: 50%;
         padding: 20px;
       }
