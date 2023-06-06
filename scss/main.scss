@@ -10,7 +10,7 @@
   z-index: 10;
   padding: 0 4.1vw;
   background: #fff;
-  height: 10vh;
+  height: 12vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -101,7 +101,7 @@
 }
 
 .splide__track {
-  height: 89.5vh;
+  height: 87.5vh;
   h1 {
     margin: 10vh 0;
     font-family: Yantramanav, sans-serif;
@@ -130,7 +130,7 @@
     .slide--1 {
       height: 100%;
       z-index: -2;
-      background: url(../img/Dummy_imgs/infissi-in-legno-alluminio-1.jpg)
+      background: url(../img/deals.jpg)
         no-repeat center/cover;
     }
     .slide--2 {

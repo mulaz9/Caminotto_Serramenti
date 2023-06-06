@@ -354,6 +354,9 @@
     transition: all 0.3s ease-in-out;
     img {
       width: 100%;
+      height: 300px;
+      border-radius: 20px;
+      box-shadow: 3px 3px $h3-color;
     }
     .news__title {
       display: flex;
@@ -371,7 +374,7 @@
 }
 
 #single-news {
-  display: felx;
+  display: flex;
   flex-direction: column;
   .single__news--card {
     padding: 10vh 2vw;
@@ -379,7 +382,8 @@
     grid-template-columns: 1fr 2fr;
     align-items: center;
     img {
-      width: 100%;
+      width: 70%;
+      border-radius: 20px;
     }
   }
   .card__text {

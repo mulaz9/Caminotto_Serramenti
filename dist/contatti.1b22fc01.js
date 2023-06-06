@@ -5,4 +5,4 @@ const addCurrent = ()=>{
 };
 addCurrent();
 
-//# sourceMappingURL=contatti.1b22fc01.js.map
+//# sourceMappingURL=Contatti.1b22fc01.js.map
