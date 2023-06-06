@@ -1069,16 +1069,33 @@
 
   #news .news {
     grid-template-columns: 1fr;
+    margin: 0;
     padding: 7px;
   }
 
+  #news .news img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
   #single-news .single__news--card {
+    width: 90%;
     grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  #single-news .single__news--card .news__title {
+    text-align: center;
   }
 
   #single-news .single__news--card .btn__dark {
     width: 100%;
     justify-content: center;
+  }
+
+  #single-news .single__news--card img {
+    width: 100%;
   }
 
   #contatti, #contatti ul {
@@ -1997,16 +2014,33 @@
 
   #news .news {
     grid-template-columns: 1fr;
+    margin: 0;
     padding: 7px;
   }
 
+  #news .news img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
   #single-news .single__news--card {
+    width: 90%;
     grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  #single-news .single__news--card .news__title {
+    text-align: center;
   }
 
   #single-news .single__news--card .btn__dark {
     width: 100%;
     justify-content: center;
+  }
+
+  #single-news .single__news--card img {
+    width: 100%;
   }
 
   #contatti, #contatti ul {
