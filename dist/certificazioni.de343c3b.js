@@ -163,17 +163,6 @@ const footerMarkup = function() {
     <p>
       <a
         target="_blank"
-        href="https://www.google.com/maps/place/CAMINOTTO+SERRAMENTI/@45.6986831,12.6906339,15z/data=!4m2!3m1!1s0x0:0xb4ca935ce8077423?sa=X&ved=2ahUKEwjyjP3ui8n7AhUXSfEDHau-BWYQ_BJ6BAhjEAg"
-      >
-        <iconify-icon icon="fa-solid:map-marker-alt"></iconify-icon>
-        <span>--</span>
-        Via Triestina, 4<br /><span>-----</span>30020 - Torre di mosto
-        (VE)</a
-      >
-    </p>
-    <p>
-      <a
-        target="_blank"
         href="https://www.google.com/maps/place/Via+Livenza,+3,+30022+Ceggia+VE/@45.6777978,12.633703,21z/data=!4m5!3m4!1s0x4779581342861a27:0x56328c40c04bbe12!8m2!3d45.6778429!4d12.6337893"
       >
         <iconify-icon icon="fa-solid:map-marker-alt"></iconify-icon>
