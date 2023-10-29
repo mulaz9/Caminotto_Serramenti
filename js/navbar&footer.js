@@ -8,7 +8,7 @@ const navbarMarkup = function () {
   <nav class="navbar">
   <div class="navbar__logo">
   <a href="index.html">
-    <img src="https://res.cloudinary.com/mulaz/image/upload/v1669155224/logo_light_htlfqo.jpg" alt="logo" />
+    <img src="https://res.cloudinary.com/mulaz/image/upload/v1698584649/logo_light_dhsrik.jpg" alt="logo" />
     </a>
   </div>
   <div class="navbar__ul--container">
